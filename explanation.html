@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explanation of Metrics (69)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Explanation of Metrics (69)</h1>
+    <h2>Here are the different metrics collected through SonarQube's API for a given Java project:</h2>
+    <table class="metrics-table">
+        <tr>
+            <th>Metric</th>
+            <th>Definition</th>
+        </tr>
+        <tr>
+            <td>1. sqale_index</td>
+            <td>The SQALE index that measures the overall code quality based on various criteria such as maintenance, reliability, security, and efficiency.</td>
+        </tr>
+        <tr>
+            <td>2. code_smells</td>
+            <td>The number of "code smells," indicating pieces of code that may require improvements in terms of readability, maintainability, or performance.</td>
+        </tr>
+        <tr>
+            <td>3. sqale_debt_ratio</td>
+            <td>The technical debt ratio based on the SQALE model. It indicates how much technical work is needed to achieve an ideal code state.</td>
+        </tr>
+        <tr>
+            <td>4. bugs</td>
+            <td>The number of bugs identified in the code, representing functional or logical issues.</td>
+        </tr>
+        <tr>
+            <td>5. vulnerabilities</td>
+            <td>The number of vulnerabilities identified in the code, indicating security weaknesses that could be exploited by attackers.</td>
+        </tr>
+        <tr>
+            <td>6. duplicated_lines_density</td>
+            <td>The density of duplicated lines of code, an indicator of code quality in terms of reuse and duplication.</td>
+        </tr>
+        <tr>
+            <td>7. coverage</td>
+            <td>The code coverage rate by tests, expressed as a percentage. It measures the proportion of code covered by tests compared to the total code.</td>
+        </tr>
+        <tr>
+            <td>8. complexity</td>
+            <td>The overall complexity of the code, measured based on code structure and dependencies.</td>
+        </tr>
+        <tr>
+            <td>9. cognitive_complexity</td>
+            <td>The cognitive complexity of the code, evaluating complexity based on human understandability rather than purely technical metrics.</td>
+        </tr>
+        <tr>
+            <td>10. ncloc (Non Commented Lines Of Code)</td>
+            <td>The number of lines of code without comments, allowing evaluation of the actual code size.</td>
+        </tr>
+        <tr>
+            <td>11. comment_lines</td>
+            <td>The number of lines containing comments, providing insight into documentation and explanations in the code.</td>
+        </tr>
+        <tr>
+            <td>12. comment_lines_density</td>
+            <td>The density of comment lines compared to the code, expressed as a percentage.</td>
+        </tr>
+        <tr>
+            <td>13. duplicated_blocks</td>
+            <td>The number of duplicated code blocks, showing sections of code that repeat in the application.</td>
+        </tr>
+        <tr>
+            <td>14. duplicated_files</td>
+            <td>The number of identical or very similar files in the code.</td>
+        </tr>
+        <tr>
+            <td>15. duplicated_lines</td>
+            <td>The number of lines of code that are identical or very similar, indicating a duplication issue.</td>
+        </tr>
+        <tr>
+            <td>16. new_bugs</td>
+            <td>The number of new bugs identified since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>17. new_code_smells</td>
+            <td>The number of new "code smells" identified since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>18. new_coverage</td>
+            <td>The new code coverage rate by tests since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>19. new_duplicated_blocks</td>
+            <td>The number of new duplicated code blocks since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>20. new_duplicated_lines</td>
+            <td>The number of new duplicated lines of code since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>21. new_duplicated_lines_density</td>
+            <td>The density of new duplicated lines of code since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>22. new_maintainability_rating</td>
+            <td>The new maintainability rating since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>23. new_reliability_rating</td>
+            <td>The new reliability rating since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>24. new_security_hotspots</td>
+            <td>The number of new security hotspots identified since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>25. new_security_rating</td>
+            <td>The new security rating since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>26. new_technical_debt</td>
+            <td>The new technical debt since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>27. new_vulnerabilities</td>
+            <td>The number of new vulnerabilities identified since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>28. alert_status</td>
+            <td>The overall alert status of the project.</td>
+        </tr>
+        <tr>
+            <td>29. quality_gate_details</td>
+            <td>Details on the code quality according to the quality gate.</td>
+        </tr>
+        <tr>
+            <td>30. reliability_rating</td>
+            <td>The code reliability rating.</td>
+        </tr>
+        <tr>
+            <td>31. security_rating</td>
+            <td>The code security rating.</td>
+        </tr>
+        <tr>
+            <td>32. security_hotspots_reviewed_status</td>
+            <td>The security hotspots review status.</td>
+        </tr>
+        <tr>
+            <td>33. sqale_rating</td>
+            <td>The code quality rating based on the SQALE model.</td>
+        </tr>
+        <tr>
+            <td>34. effort_to_reach_maintainability_rating_a</td>
+            <td>The estimated effort to reach the maximum maintainability rating.</td>
+        </tr>
+        <tr>
+            <td>35. violations</td>
+            <td>The total number of code non-conformities to quality rules.</td>
+        </tr>
+        <tr>
+            <td>36. blocker_violations</td>
+            <td>The number of blocking non-conformities.</td>
+        </tr>
+        <tr>
+            <td>37. critical_violations</td>
+            <td>The number of critical non-conformities.</td>
+        </tr>
+        <tr>
+            <td>38. major_violations</td>
+            <td>The number of major non-conformities.</td>
+        </tr>
+        <tr>
+            <td>39. minor_violations</td>
+            <td>The number of minor non-conformities.</td>
+        </tr>
+        <tr>
+            <td>40. info_violations</td>
+            <td>The number of information non-conformities.</td>
+        </tr>
+        <tr>
+            <td>41. new_violations</td>
+            <td>The number of new non-conformities since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>42. new_blocker_violations</td>
+            <td>The number of new blocking non-conformities since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>43. new_critical_violations</td>
+            <td>The number of new critical non-conformities since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>44. new_major_violations</td>
+            <td>The number of new major non-conformities since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>45. new_minor_violations</td>
+            <td>The number of new minor non-conformities since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>46. new_info_violations</td>
+            <td>The number of new information non-conformities since the last analysis.</td>
+        </tr>
+        <tr>
+            <td>47. false_positive_issues</td>
+            <td>The number of issues wrongly identified as problems.</td>
+        </tr>
+        <tr>
+            <td>48. open_issues</td>
+            <td>The total number of open issues.</td>
+        </tr>
+        <tr>
+            <td>49. confirmed_issues</td>
+            <td>The number of confirmed issues.</td>
+        </tr>
+        <tr>
+            <td>50. reopened_issues</td>
+            <td>The number of reopened issues.</td>
+        </tr>
+        <tr>
+            <td>51. wont_fix_issues</td>
+            <td>The number of issues marked as not needing correction.</td>
+        </tr>
+        <tr>
+            <td>52. classes</td>
+            <td>The total number of classes.</td>
+        </tr>
+        <tr>
+            <td>53. files</td>
+            <td>The total number of files.</td>
+        </tr>
+        <tr>
+            <td>54. functions</td>
+            <td>The total number of functions.</td>
+        </tr>
+        <tr>
+            <td>55. lines</td>
+            <td>The total number of lines of code.</td>
+        </tr>
+        <tr>
+            <td>56. ncloc_language_distribution</td>
+            <td>The code distribution by language.</td>
+        </tr>
+        <tr>
+            <td>57. projects</td>
+            <td>The total number of projects.</td>
+        </tr>
+        <tr>
+            <td>58. statements</td>
+            <td>The total number of statements.</td>
+        </tr>
+        <tr>
+            <td>59. public_api</td>
+            <td>The total number of public API.</td>
+        </tr>
+        <tr>
+            <td>60. public_undocumented_api</td>
+            <td>The total number of undocumented public API.</td>
+        </tr>
+        <tr>
+            <td>61. comment_lines_density</td>
+            <td>The density of comment lines compared to the code.</td>
+        </tr>
+        <tr>
+            <td>62. public_documented_api_density</td>
+            <td>The density of documented public API.</td>
+        </tr>
+        <tr>
+            <td>63. lines_to_cover</td>
+            <td>The number of lines to cover by tests.</td>
+        </tr>
+        <tr>
+            <td>64. uncovered_lines</td>
+            <td>The number of lines of code not covered by tests.</td>
+        </tr>
+        <tr>
+            <td>65. line_coverage</td>
+            <td>The code line coverage rate by tests, expressed as a percentage.</td>
+        </tr>
+        <tr>
+            <td>66. conditions_to_cover</td>
+            <td>The number of conditions to cover by tests.</td>
+        </tr>
+        <tr>
+            <td>67. uncovered_conditions</td>
+            <td>The number of conditions not covered by tests.</td>
+        </tr>
+        <tr>
+            <td>68. branch_coverage</td>
+            <td>The branch coverage rate by tests, expressed as a percentage.</td>
+        </tr>
+        <tr>
+            <td>69. new_lines</td>
+            <td>The number of new lines of code added since the last analysis.</td>
+        </tr>
+    </table>
+    <h2>Some Java projects may not have all these metrics, which is why there are fewer in some project metric datasets.</h2>
+    <script src="explanation.js"></script>
+</body>
+</html>
+
+
+

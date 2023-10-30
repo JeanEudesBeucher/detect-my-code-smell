@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Detect My Code Smells</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Detect My Code Smells</h1>
+    <p>Enter the various metrics for your project in the form below:</p>
+    <form id="metricsForm">
+                <label for="NOM">NOM (Number Of Methods) :</label><br>
+                <input type="number" id="NOM" name="NOM"><br>
+                <br>
+                <label for="NCLOC">NCLOC (Non-Comment Lines Of Code) :</label><br>
+                <input type="number" id="NCLOC" name="NCLOC"><br>
+                <br>
+                <label for="CYCLO">CYCLO (Cyclomatic Complexity) :</label><br>
+                <input type="number" id="CYCLO" name="CYCLO"><br>
+                <br>
+                <label for="AWM">AWM (NCLOC per NOM : Average Weighted Method) :</label><br>
+                <input type="number" id="AWM" name="AWM"><br>
+                <br>
+                <label for="NOC">NOC (Number Of Classes) :</label><br>
+                <input type="number" id="NOC" name="NOC"><br>
+                <br>
+                <label for="NOCL">NOCL (Number Of Comment Lines) :</label><br>
+                <input type="number" id="NOCL" name="NOCL"><br>
+                <br>
+                <label for="NOF">NOF (Number Of Files) :</label><br>
+                <input type="number" id="NOF" name="NOF"><br>
+                <br>
+                <label for="NOS">NOS (Number Of Statements) :</label><br>
+                <input type="number" id="NOS" name="NOS"><br>
+                <br>
+                <label for="WMC">WMC (CYCLO per NOC : Weighted Method Count) :</label><br>
+                <input type="number" id="WMC" name="WMC"><br>
+                <br>
+        <input type="submit" value="Submit">
+            
+    </form>
+    <div id="text"></div>
+    <p>NOM (Number Of Methods): A high number of methods in a class can indicate a “code smell” known as “God Class”. A “God Class” is a class that has too many responsibilities and can be difficult to maintain. It can also be difficult to understand because it does too many things.</p>
+    <br>
+    <p>NCLOC (Non-Comment Lines Of Code): A high number of lines of code can indicate a “code smell” known as “Long Method” or “Large Class”. These “smells” occur when methods or classes are too long, which can make the code difficult to understand and maintain.</p>
+    <br>    
+    <p>CYCLO (Cyclomatic Complexity): High cyclomatic complexity means there are many execution paths through the code, which can indicate a “code smell” called “Complex Class”. These classes are difficult to test and maintain.</p>
+    <br>
+    <p>AWM (Average Weighted Method): This metric measures the average complexity of a class’s methods. A high value can indicate a “code smell” called “Complex Method”, where the methods are too complex.</p>
+    <br>
+    <p>NOC (Number Of Classes): A high number of classes in a project can indicate a “code smell” known as “Overloaded Project”. An “Overloaded Project” is a project that has too many classes and can be difficult to maintain. It can also be difficult to understand because it does too many things.</p>
+    <br>
+    <p>NOCL (Number Of Comment Lines): A high number of comment lines can indicate a “code smell” known as “Excessive Comments”. These “smells” occur when there are too many comments, which can make the code difficult to understand and maintain.</p>
+    <br>    
+    <p>NOF (Number Of Files): A high number of files in a project can indicate a “code smell” known as “Cluttered Project”. A “Cluttered Project” is a project that has too many files and can be difficult to maintain. It can also be difficult to understand because it does too many things.</p>
+    <br>
+    <p>NOS (Number Of Statements): A high number of statements in a project can indicate a “code smell” known as “Overloaded Method”. An “Overloaded Method” is a method that has too many statements and can be difficult to maintain. It can also be difficult to understand because it does too many things.</p>
+    <br>
+    <p>WMC (Weighted Method Count): A high weighted method count indicates a complex class with potentially too many methods. It can make the class difficult to understand and maintain, impacting the overall project's maintainability.</p>
+    <br>
+    <div id="myDiv"></div>
+    <div id="myDiv1" class="js-plotly-plot"></div>
+    <script src="detect.js"></script>
+</body>
+</html>
+

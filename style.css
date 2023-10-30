@@ -1,0 +1,191 @@
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.project-table th, .project-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.alert {
+    margin-left: 10px;
+}
+
+.alert.low {
+    color: green;
+}
+
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 50% !important;
+    padding: 10px !important;
+  }
+  
+  /* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bubble {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.green {
+    background-color: green;
+    color: white;
+    margin-top: 10px; /* Ajustez l'espacement depuis le graphique */
+    margin-bottom:20px; /* Ajout du margin-bottom pour déplacer la bulle vers le bas */
+}
+
+#myDiv {
+    margin-bottom: 50px; 
+    width: 100%;/* Ajout du margin-bottom pour créer de l'espace pour la bulle */
+}
+
+ 
+
+.image-contain {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+  
+.alert.medium {
+    color: orange;
+}
+
+.alert.high {
+    color: red;
+}
+
+.project-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Gris clair pour les lignes paires */
+}
+
+.project-table tr:nth-child(odd) {
+    background-color: #ffffff; /* Blanc pour les lignes impaires */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-contain img {
+    width: 200px;  /* Ajustez la largeur comme vous le souhaitez */
+    height: 100px; /* Ajustez la hauteur comme vous le souhaitez */
+}
+
+.image-soul img {
+    width: 1000px; /* Ajustez la taille de l'image comme vous le souhaitez */
+    height: 300px;
+}
+
+.image-item img {
+    width: 330px; /* Ajustez la taille de l'image comme vous le souhaitez */
+    height: 175px;
+}
+
+
+.image-item2 img {
+    width: 200px; /* Ajustez la taille de l'image comme vous le souhaitez */
+    height: 150px;
+}
+
+.image-item p {
+    width: 300px; /* Ajustez la largeur comme vous le souhaitez */
+    margin: 0 auto;
+}
+
+.image-item p {
+    text-align: center;
+}
+
+.project-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.project-table td {
+    color: #000000; /* Noir pour le texte des métriques */
+}
+
+#metricsButton, #explanationButton, #graphsButton, #detectButton {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #1abc9c;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#metricsButton:hover, #explanationButton:hover, #graphsButton:hover, #detectButton:hover {
+    background-color: #16a085;
+}
+
+button {
+    margin: 10px;
+}
+body {
+    background-color: #0a2933;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.metrics-table th, .metrics-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.metrics-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Gris clair pour les lignes paires */
+}
+
+.metrics-table tr:nth-child(odd) {
+    background-color: #ffffff; /* Blanc pour les lignes impaires */
+}
+
+.metrics-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.metrics-table td {
+    color: #000000; /* Noir pour le texte des métriques */
+}
+
+.red {
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    margin-bottom:20px; /* Ajustez l'espacement depuis le graphique */
+}
+

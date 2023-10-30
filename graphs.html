@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Metrics Graphs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Metrics Graphs</h1>
+    <div class="image-container">
+    <img src="/metrics.png" alt="metrics">
+    </div><br>
+    <p>• Average (AVG), to determine the most typical value of the data set.
+        <br>
+        • Standard deviation (STDEV), to get a measure of how much the
+        values in the data set are spread.
+        <br>
+        
+        Knowing the AVG and STDEV values and assuming a normal distribution for the collected data (i.e., that most values are concentrated
+        in the middle rather than the margins of the data set), we also know
+        the two margins of the typical values interval for a metric and the
+        threshold for very high values. These are:
+        <br>
+        • Lower margin: AVG - STDEV
+        <br>
+        • Higher margin: AVG + STDEV
+        <br>
+        • Very high: (AVG+STDEV )*1.5, i.e, we consider a value to be very
+        high if it is 50% higher than the threshold for a high value.</p>
+        <br>
+    <div class="image-container">
+        <div class="image-soul">
+        <img src="/number.png" alt="number">
+        </div>
+    </div><br>
+
+
+    <div class="image-container">
+        <div class="image-item">
+            <img src="/CYCLO.png" alt="CYCLO Graph">
+            <p>CYCLO Graph</p>
+            <p>CYCLO: The CYCLO metric, or cyclomatic complexity, or McCabe measure is used to measure the complexity of a project. It reflects the number of decisions in an algorithm by counting the number of linearly independent paths through a program. The usefulness of cyclomatic complexity lies in its ability to provide an estimate of the complexity of a software product. It can be used to assess the structural complexity of a program, which can help identify areas of code that may require redesign or revision. Moreover, a high cyclomatic complexity value may indicate a lack of modularity, which can make the code more difficult to maintain and understand. Finally, cyclomatic complexity can be used to estimate the effort required to test a program, as a higher number of paths may require a larger number of unit tests.</p>
+        </div>
+        <div class="image-item">
+            <img src="/NOM.png" alt="NOM Graph">
+            <p>NOM Graph</p>
+            <p>NOM: The NOM metric is the total number of methods or functions in a project. The usefulness of the NOM metric lies in its ability to provide an estimate of the complexity of a software product. It can be used to assess the structural complexity of a program, which can help identify areas of code that may require redesign or revision. Moreover, a high NOM value may indicate a lack of modularity, which can make the code more difficult to maintain and understand. Finally, the NOM metric can be used to estimate the effort required to test a program, as a higher number of methods may require a larger number of unit tests.</p>
+        </div>
+        <div class="image-item">
+            <img src="/NCLOC.png" alt="NCLOC Graph">
+            <p>NCLOC Graph</p>
+            <p>NCLOC: The NCLOC metric is the number of lines excluding comments and blank lines. It's an average of the number of lines of code per project. The usefulness of the NCLOC metric lies in its ability to provide an estimate of the physical size of a software product. It can be used to assess the space needed for storage, the number of pages needed to print the program, and the management of on-screen viewing. In addition, the internal attributes of the software product, such as size measured by NCLOC, can impact its external attributes. A good internal structure can lead to better product quality.</p>
+        </div>
+        <div class="image-item">
+            <img src="/AWM.png" alt="AWM Graph">
+            <p>AWM Graph</p>
+            <p>AWM (Average Weighted Method): The AWM metric measures the average complexity of a class’s methods. A high value can indicate a “code smell” called “Complex Method”, where the methods are too complex. This metric can help identify parts of the code that could benefit from a redesign to simplify logic and improve readability. Moreover, by reducing the complexity of methods, one can often improve other attributes of the software, such as its ease of testing and maintenance. Ultimately, the goal is to create code that is not only functional but also clean and efficient.</p>
+        </div>
+    </div>
+    <br>
+    <script src="graphs.js"></script>
+</body>
+</html>
